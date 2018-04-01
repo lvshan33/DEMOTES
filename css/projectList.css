@@ -1,0 +1,51 @@
+.topButton .topbutton{
+    margin-top:14%;
+    margin-right: 6%;
+}
+/*body{*/
+    /*height:120%;*/
+    /*overflow-y: scroll;*/
+/*}*/
+.table-title{
+    width:88%;
+    color: #0a6999;
+    /*border: 1px solid black;*/
+    background-color: white;
+    /*margin:2px auto;*/
+    height: 100px;
+    padding: 0 6%;
+    line-height: 100px;
+    margin-bottom: 1%;
+
+}
+.table-title .rfloat>span:nth-of-type(1){
+    position: relative;
+    right:4%
+}
+.tableList{
+    width: 100%;
+    background-color: white;
+    margin:1% 0;
+    overflow: hidden;
+}
+.tableList table{
+    margin:3% auto;
+    border-radius: 5px;
+}
+td{
+    width: 50%;
+}
+tr>td:nth-of-type(2){
+    text-align: right;
+}
+.lastColor{
+    color: red  ;
+}
+.noneBox{
+    height: 150px;
+}
+.table{
+    margin-bottom: 3%;
+}
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/boardList.css">
+    <link rel="stylesheet" href="css/detil.css">
+
+
+</head>
+<body>
+
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/user.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="person.html">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li>
+            <a href="projectList.html">
+                <img src="images/user.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li>
+            <a href="boardList.html">
+                <img src="images/user.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <div class="right"> <</div>
+    <div class="topButton-btn">
+        <button class="topbutton rfloat" id="creattt">创建任务</button>
+    </div>
+</div>
+
+<p> <span class="hystitle"></span><span>/任务列表</span></p>
+<!--下面列表-->
+<ul class="userList">
+    <li class="userList-title">
+        <span>任务号</span>
+        <span>确认工时</span>
+    </li>
+</ul>
+
+
+<!--隐藏的创建任务的模态框-->
+<div class="vote" id="opcaVote">
+    <p class="vote-title"></p>
+    <p id="workId">任务编号 <span class="heart">*</span>：<input type="text" placeholder="请输入任务编号" id="workIdval"></p>
+    <p>任务名称：<input type="text" placeholder="请输入任务名称" id="workname"></p>
+    <p><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+</div>
+
+<!--遮罩层-->
+<div class="opcaty"> </div>
+
+<!--显示导航条空白Div-->
+<div class="noneBox"></div>
+
+<!--隐藏的登录验证的模态框-->
+<div class="vote" id="loginBox">
+    <p class="vote-title">登录</p>
+    <table>
+        <tr>
+            <td align="right">用户名 <span class="heart">*</span>：</td>
+            <td><input type="text" placeholder="请输入用户名" id="usernamew"></td>
+        </tr>
+        <tr id="addPerson-pass" style="margin: 10%">
+            <td align="right">密码：</td>
+            <td><input type="text" placeholder="请输入姓名" id="pass"></td>
+        </tr>
+
+    </table>
+    <p id="login-btn">
+        <button class="buttonS">登录</button>
+        <button class="buttonB" id="changepass">修改密码</button>
+        <button class="rfloat buttonB">返回</button>
+    </p>
+
+</div>
+
+<!--修改密码-->
+<div class="vote creatVote"  id="creatVote">
+    <p class="vote-title">修改密码</p>
+    <table id="addPerson">
+        <tr style="color: red;margin: 100px">
+            <td>用户名：</td>
+            <td> <span>发抖的小喵喵</span></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td> <span>张三</span></td>
+        </tr>
+        <tr>
+            <td>原密码：</td>
+            <td><input type="text" placeholder="请输入原密码" id="boardpass"></td>
+        </tr>
+        <tr>
+            <td>新密码 ：</td>
+            <td><input type="text" id="datel" placeholder="请输入新密码"></td>
+        </tr>
+        <tr>
+            <td>确认新密码：</td>
+            <td><input type="text" placeholder="请确认新密码" id="peonum"></td>
+        </tr>
+
+    </table>
+    <p id="creatVote-btn"><button class="buttonS">确定</button><button class="rfloat buttonB">返回</button></p>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/detil.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

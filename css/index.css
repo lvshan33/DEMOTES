@@ -1,0 +1,22 @@
+.topButton>p{
+    color: white;
+    font-size:2rem;
+    padding:11% 5%;
+}
+.topButton+p{
+    width:250px;
+    margin:5% auto;
+    font-size: 2rem;
+}
+.userList>li>a>span:nth-of-type(2)>span:nth-of-type(1){
+    margin-left:-8%;
+}
+.vote{
+    height:700px;
+}
+.vote>p:not(.vote-title){
+    margin:7% !important;
+}
+#home,#username{
+    margin-left:16% !important;
+}

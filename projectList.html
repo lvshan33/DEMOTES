@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <!--<link rel="stylesheet" href="css/vote.css">-->
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/projectList.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/user.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="person.html">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li>
+            <a href="projectList.html">
+                <img src="images/user.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li>
+            <a href="boardList.html">
+                <img src="images/user.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <div class="topButton-btn" >
+        <button class="topbutton rfloat">导出EXCEL</button>
+    </div>
+</div>
+
+<p>项目列表</p>
+
+<!--下面列表-->
+<div class="table">
+    <p class="table-title">
+        <span>会议室一</span>
+        <span class="rfloat">
+            <span>2018-2-12</span>
+            <span>开放</span>
+        </span>
+    </p>
+    <div class="tableList">
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th align="left">任务3</th>
+                <th>关于UI设计工时评估</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr class="lastColor">
+                <td>平均分</td>
+                <td>19</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th align="left">任务3</th>
+                <th>关于UI设计工时评估</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr class="lastColor">
+                <td>平均分</td>
+                <td>19</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="table">
+    <p class="table-title">
+        <span>会议室一</span>
+        <span class="rfloat">
+            <span>2018-2-12</span>
+            <span>开放</span>
+        </span>
+    </p>
+    <div class="tableList">
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th align="left">任务3</th>
+                <th>关于UI设计工时评估</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr class="lastColor">
+                <td>平均分</td>
+                <td>19</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th align="left">任务3</th>
+                <th>关于UI设计工时评估</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>10</td>
+            </tr>
+            <tr class="lastColor">
+                <td>平均分</td>
+                <td>19</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--显示导航条空白Div-->
+<div class="noneBox"></div>
+
+
+<!--隐藏的评估投票的模态框-->
+<div class="vote">
+    <p class="vote-title">创建人员</p>
+
+    <table id="addPerson">
+        <tr>
+            <td>用户名 *：</td>
+            <td><input type="text" placeholder="请输入用户名" id="usernamew"></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" placeholder="请输入姓名" id="name"></td>
+        </tr>
+        <tr>
+            <td>电话：</td>
+            <td><input type="text" placeholder="请输入电话" id="telephone"></td>
+        </tr>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="text" placeholder="请输入邮箱" id="email"></td>
+        </tr>
+        <tr>
+            <td>岗位：</td>
+            <td>
+                <select name=""  id="post" >
+                    <option value="1">员工</option>
+                    <option value="2">管理员</option>
+                    <option value="3">项目经理</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+    <p><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+</div>
+
+<!--遮罩层-->
+<div class="opcaty"> </div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/projectList.js"></script>
+</body>
+</html>

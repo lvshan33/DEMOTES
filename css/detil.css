@@ -1,0 +1,68 @@
+.topButton>.right{
+    width:30%;
+    line-height:270px;
+    font-size:4.5rem;
+    color: white;
+}
+/*头部按钮*/
+.topButton{
+    width: 100%;
+    height:220px;
+    display: flex;
+    background-color:#343434 ;
+    justify-content:space-around
+}
+
+.topButton>div{
+    width:60%;
+}
+.topButton .topButton-btn button{
+    margin-top:16%;
+}
+
+.topButton+p{
+    width:390px;
+    margin:5% auto;
+    font-size: 2.5rem;
+}
+
+.userList>li:nth-of-type(1),.userList-title span{
+    color: #0a6999 !important;
+}
+
+.userList>li:not(:first-child){
+    height:150px;
+    padding-bottom: 3%;
+}
+.userList>li>span:nth-of-type(1){
+    float: left;
+}
+.userList>li>span:nth-of-type(2):not(.userList-title){
+    float: right;
+    color: red;
+}
+
+.vote{
+    height:850px;
+    top:30%;
+    border-radius: 5%;
+}
+#workId+p>input{
+    height: 300px;
+    border-radius: 10%!important;
+}
+#workId+p{
+    margin: -6% 0 0 12%;
+}
+#workId+p+p{
+    width: 70%;
+    margin:7% auto;
+}
+.topButton .topButton-btn button {
+    margin: 0 !important;
+}
+#opcaVote button{
+    width: 43% !important;
+}
+
+

@@ -1,0 +1,169 @@
+
+/*公共样式*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size:1.5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(239,244,250);
+}
+.lfloat{
+    float: left;
+}
+.rfloat{
+    float: right;
+}
+/*头部按钮*/
+.topButton{
+    width: 100%;
+    height:220px;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto !important;
+    background-color:#343434 ;
+}
+.topButton p{
+    width:45%;
+    font-size:45px;
+    margin:8% auto;
+}
+
+
+
+/*遮罩层*/
+.opcaty{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.17);
+    position: fixed;
+    top:0;
+    left:0;
+    /*display: none;*/
+}
+
+/*底部导航*/
+ul.footerNav{
+    height:180px;
+    background-color: white;
+    position: fixed;
+    bottom:-20px;
+    width: 100%;
+    display: flex;
+    box-shadow:0px 0px  10px 6px #aaa;
+    justify-content:space-around
+}
+
+ul.footerNav>li{
+    margin-top: 2%;
+}
+ul.footerNav>li>a{
+    width: 150px ;
+    font-size:2.5rem;
+    text-align: center;
+    display: inline-block;
+    /*border: 1px solid red;*/
+}
+ul.footerNav>li>a>span{
+    display: block;
+}
+
+
+/*<!--隐藏的评估投票的模态框-->*/
+.vote{
+    width: 90%;
+    border-radius:8px;
+    height:550px;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top:33%;
+    left:5%;
+    z-index: 2;
+}
+.vote .vote-title{
+    color: rgb(119,166,211);
+    text-align: center;
+    margin-top:5%;
+}
+
+.vote .vote-title+p,.vote .vote-title+p+p{
+    width: 80%;
+    margin:13% auto;
+}
+.vote .vote-title+p+p>button{
+    display: inline-block;
+    border-radius:70px;
+    width: 43%;
+    height:90px;
+}
+.vote .vote-title+p+p>button:nth-of-type(2){
+    float: right;
+}
+.vote input{
+    border-radius:70px;
+    width:60%;
+    height:80px;
+    padding-left: 2%;
+}
+
+/*登录*/
+#loginBox table{
+    width: 90%;
+    /*border: 1px solid red;*/
+    margin:4% auto;
+}
+#loginBox table input{
+    width: 90%;
+    margin:6%;
+}
+
+#loginBox{
+    height:630px;
+}
+#loginBox>#login-btn{
+    width:90%!important;
+    display: flex;
+    margin-left: 4.5%;
+    justify-content:space-around
+}
+
+#loginBox>#login-btn button{
+    width: 30%;
+}
+
+input{
+    outline: none;
+}
+
+/*button 公共样式*/
+.buttonS{
+    display: inline-block;
+    border-radius:70px;
+    width: 43%;
+    height:90px;
+    color: white;
+    background-color: rgb(23,119,219);
+}
+.buttonB{
+    display: inline-block;
+    border-radius:70px;
+    width: 43%;
+    height:90px;
+    background-color: white;
+    border: 1px solid rgb(119,166,211);
+}
+.topbutton{
+    display: inline-block;
+    border-radius:70px;
+    width: 43%;
+    height:90px;
+    background-color: white;
+    color: rgb(119,166,211);
+}

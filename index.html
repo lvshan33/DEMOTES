@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">必须加-->
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/user.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <p>scrum评估会议工作</p>
+</div>
+
+<p> 会议室列表</p>
+<!--下面列表-->
+<ul class="userList">
+</ul>
+
+
+<!--隐藏的评估投票的会议室密令模态框-->
+<div class="vote" id="opcaVotep">
+    <p class="vote-title">会议室登录</p>
+    <p id="home">会议室: <span></span></p>
+    <p>会议室口令：<input type="text" placeholder="请输入会议室口令"></p>
+    <p><button class="buttonS">登录</button><button class="rfloat buttonB">返回</button></p>
+</div>
+
+<!--遮罩层-->
+<div class="opcaty"> </div>
+
+<!--显示导航条空白Div-->
+<div class="noneBox"></div>
+
+<!--隐藏的登录验证的模态框-->
+<div class="vote" id="loginBox">
+    <p class="vote-title">登录</p>
+    <table>
+        <tr>
+            <td align="right">用户名 <span class="heart">*</span>：</td>
+            <td><input type="text" placeholder="请输入用户名" id="usernamew"></td>
+        </tr>
+        <tr id="addPerson-pass" style="margin: 10%">
+            <td align="right">密码：</td>
+            <td><input type="text" placeholder="请输入姓名" id="pass"></td>
+        </tr>
+
+    </table>
+    <p id="login-btn">
+        <button class="buttonS">登录</button>
+        <button class="buttonB" id="changepass">修改密码</button>
+        <button class="rfloat buttonB">返回</button>
+    </p>
+
+</div>
+
+<!--修改密码-->
+<div class="vote creatVote"  id="creatVote">
+    <p class="vote-title">修改密码</p>
+    <table id="addPerson">
+        <tr>
+            <td>用户名：</td>
+            <td> <span>发抖的小喵喵</span></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td> <span>张三</span></td>
+        </tr>
+        <tr>
+            <td>原密码：</td>
+            <td><input type="text" placeholder="请输入原密码" id="boardpass"></td>
+        </tr>
+        <tr>
+            <td>新密码 ：</td>
+            <td><input type="text" id="datel" placeholder="请输入新密码"></td>
+        </tr>
+        <tr>
+            <td>确认新密码：</td>
+            <td><input type="text" placeholder="请确认新密码" id="peonum"></td>
+        </tr>
+
+    </table>
+    <p id="creatVote-btn"><button class="buttonS">确定</button><button class="rfloat buttonB">返回</button></p>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

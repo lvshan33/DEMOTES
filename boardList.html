@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会议室</title>
+    <link rel="stylesheet" href="css/master.css">
+    <!--<link rel="stylesheet" href="css/vote.css">-->
+    <link rel="stylesheet" href="css/boardList.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/user.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="person.html">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li>
+            <a href="projectList.html">
+                <img src="images/user.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li>
+            <a href="boardList.html">
+                <img src="images/user.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <div class="topButton-btn">
+        <button class="topbutton creatBoard">创建会议室</button>
+        <button class="topbutton">导出EXCEL</button>
+    </div>
+</div>
+
+<!--正文-->
+<P>会议室列表</P>
+
+<!--下面列表-->
+<ul class="userList">
+
+
+</ul>
+
+<!--隐藏的评估投票的模态框-->
+<div class="vote hidenVote">
+    <p class="vote-title" id="vote-title">会议室管理</p>
+    <p id="home">会议室: <span>会议室三</span></p>
+    <p id="username">说明:<span>会议室说明情况内容</span></p>
+    <p style="margin-left: 10%">会议室口令：<input type="text" placeholder="请输入会议室口令"></p>
+    <p id="vote-button">
+        <button class="buttonB vote-save">保存</button>
+        <button class=" buttonS">会议室释放</button>
+        <button class=" buttonB backBtn">返回</button>
+    </p>
+</div>
+
+<!--新增会议室-->
+<div class="vote creatVote">
+    <p class="vote-title">创建会议室</p>
+    <table id="addPerson">
+        <tr>
+            <td>会议室名称 <span class="heart">*</span>：</td>
+            <td><input type="text" placeholder="请输入会议室名称" id="boardnamew"></td>
+        </tr>
+        <tr>
+            <td>说明：</td>
+            <td><input type="text" placeholder="请输入说明" id="say"></td>
+        </tr>
+        <tr>
+            <td>会议室口令 <span class="heart">*</span>：</td>
+            <td><input type="text" placeholder="请输入会议室口令" id="boardpass"></td>
+        </tr>
+        <tr>
+            <td>截至日期 <span class="heart">*</span>：</td>
+            <td><input type="date" id="datel"></td>
+        </tr>
+        <tr>
+            <td>会议人数：</td>
+            <td><input type="text" placeholder="请输入会议人数" id="peonum"></td>
+        </tr>
+        <tr>
+            <td>评估人数 <span class="heart">*</span>：</td>
+            <td><input type="text" placeholder="请输入评估人数" id="votenum"></td>
+        </tr>
+
+    </table>
+    <p id="creatVote-btn"><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+</div>
+
+<!--遮罩层-->
+<div class="opcaty"> </div>
+
+<!--显示导航条空白Div-->
+<div class="noneBox"></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/boardList.js"></script>
+
+</body>
+</html>

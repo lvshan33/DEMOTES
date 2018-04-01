@@ -1,0 +1,72 @@
+.topButton+p{
+    font-size: 2rem;
+    width: 240px;
+    margin:5% auto;
+}
+.topButton .topButton-btn{
+    width:61%;
+    float: right;
+    margin-top:10%;
+}
+
+.topButton .topButton-btn button:nth-of-type(2){
+    margin-left:3%;
+}
+
+.userList>li>span:nth-of-type(2)>span:nth-of-type(1){
+    margin-left:-6%;
+}
+.vote{
+    height:630px;
+    padding-bottom:8%;
+    top:30%
+}
+.vote>p:not(#vote-button,#vote-title){
+    margin-left: 15% !important;
+}
+#home,#username{
+    margin:8%  auto ;
+}
+#vote-button{
+    display: flex;
+    justify-content:space-around
+}
+.vote button{
+    width: 30%;
+   margin-top: 8%;
+}
+
+/*新增会议室*/
+#addPerson{
+    margin: 3% auto;
+}
+#addPerson+p{
+    width: 80%;
+    margin-top: 7%;
+    margin-left:8%;
+}
+#addPerson tr>td:nth-of-type(1),#addPerson tr>td:nth-of-type(1){
+    text-align: right;
+}
+#addPerson tr>td input,#addPerson tr>td select{
+    width:100%;
+    padding:2%;
+    margin-top: 2%;
+}
+#addPerson tr>td{
+    border: 0;
+}
+.creatVote{
+    height:950px;
+    top:21%;
+    display: none;
+}
+.creatVote #creatVote-btn{
+    margin: 0 auto;
+}
+.creatVote #creatVote-btn button{
+  width:45%;
+    margin-top:5%;
+}
+
+
